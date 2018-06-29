@@ -1,17 +1,12 @@
-console.log('hello');
-
-function fizzbuzz(arr) {
-  var inputArr =[];
-  inputArr.push(arr);
-  inputArr.map(Element =>{
-    if(Element % 15 == 0){
-      console.log('FizzBuzz');
-    }else if(Element % 3 == 0){
-      console.log('Fizz');
-    }else if(Element % 5 == 0){
-      console.log('Buzz');
-    }else console.log(Element);
-  });
+function fizzbuzz(int) {
+  if(int % 15 === 0) {
+    return 'fizzbuzz';
+  } else if(int % 3 === 0) {
+    return 'fizz';
+  } else if(int % 5 === 0) {
+    return 'buzz';
+  } else {
+    return 'error';
+  }
 }
-
-fizzbuzz(1);
+console.log(fizzbuzz(10));
