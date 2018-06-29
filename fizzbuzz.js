@@ -1,4 +1,6 @@
 console.log('hello');
 
-function fizzbuzz(n) {}
-
+function fizzbuzz(n) {
+  return n;
+}
+console.log('fizzbuzz');
